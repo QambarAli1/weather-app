@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-sec{
+  background-color: #0f5132;
+  color: #fff;
+  padding: 20px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-main{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.header-heading h2{
+  font-size: 30px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+.header-searchbox {
+  display: block;
+  width: 400px;
+  height: 40px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.header-searchbox input {
+  display: block;
+  width: calc(100% - 90px);
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+.header-searchbox button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #9d9292;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+section.section{
+  padding: 50px 0;
+}
+.weather-desp-box {
+  display: block;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px 2px #00000030;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.weather-desp-box::before{
+  content: '';
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0f5132;
+}
+.weather-desp-box > div{
+  padding: 30px;
+}
+.weather-desp-box > div:first-child{
+  border-right: 2px solid #9d9292;
+}
+.weather-desp {
+  font-size: 18px;
+}
+
+.temperature{
+  font-size: 22px;
+}
+.temperature sup{
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+}
+
+.weather-icon {
+  font-size: 50px;
+  color: #9d9292;
 }
