@@ -14,7 +14,7 @@ function Header() {
             <div className='container'>
                 <div className='header-main'>
                     <div className='header-heading'>
-                        <h2>Weather App</h2>
+                        <h2>Weather Application</h2>
                     </div>
                     <div className='header-searchbox'>
                         <input type='search'  ref={inputRef} />
