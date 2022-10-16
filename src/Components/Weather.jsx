@@ -52,7 +52,6 @@ function Weather() {
     }, [cityName])
 
 
-
     return (
         <div>
             <div className='header-sec'>
